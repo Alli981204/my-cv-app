@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Anele Alfred Tobotshana</title>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 310px;
+      width: 250px;
+      background: linear-gradient(to bottom, #1c1c1c, #333);
+      color: #fff;
+      box-shadow: 4px 0 12px rgba(0, 0, 0, 0.3);
+      /* Added shadow effect */
+      overflow-y: auto;
+      transition: width 0.3s ease;
+      border-top-right-radius: 15px;
+      /* Rounded top-right corner */
+      border-bottom-right-radius: 15px;
+      /* Rounded bottom-right corner */
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 0 25px 25px 0;
+      /* Rounded corners on the right side */
+      transition: background 0.3s, padding-left 0.3s;
+    }
+
+    .sidebar a:hover,
+    .sidebar a.active {
+      background: #575757;
+      padding-left: 30px;
+      /* Add extra padding on hover/active */
+    }
+
+    .sidebar a span {
+      float: right;
+      width: 24px;
+      text-align: center;
+    }
+
+    .main {
+      margin-left: 250px;
+      padding: 20px;
+      transition: margin-left 0.3s;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 200px;
+      }
+
+      .main {
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .sidebar {
+        width: 100%;
+        position: relative;
+      }
+
+      .main {
+        margin-left: 0;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #333;
+    }
+
+    .section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    .section img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      border-bottom: 2px solid teal;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .section ul li {
+      margin-bottom: 10px;
+    }
+
+    .section a {
+      color: teal;
+      text-decoration: none;
+    }
+
+    .section a:hover {
+      text-decoration: underline;
+    }
+
+    .section .date {
+      color: #666;
+    }
+
+    .section .date i {
+      margin-right: 5px;
+    }
+
+
+    .sidebar a.active {
+      background: #575757;
+      /* Highlight color for active link */
+      font-weight: bold;
+      /* Optional: Make the text bold */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <a href="#personal">Personal Details <span><i class="fa fa-user-circle"></i></span></a>
+    <a href="#education">Education <span><i class="fa fa-graduation-cap"></i></span></a>
+    <a href="#skills">Skills <span><i class="fa fa-certificate"></i></span></a>
+    <a href="#interests">Interests <span><i class="fa fa-binoculars"></i></span></a>
+    <a href="#work">Work Experience <span><i class="fa fa-briefcase"></i></span></a>
+    <a href="#reference">References <span><i class="fa fa-vcard-o"></i></span></a>
+  </div>
+
+  <div class="main">
+    <div id="personal" class="section">
+      <h2>Personal Details</h2>
+      <ul>
+        <li>Name: Anele Tobotshana</li>
+        <li>Email: <a href="mailto:atobotshana@gmail.com">atobotshana@gmail.com</a></li>
+        <li>Phone: 060 481 3306</li>
+        <li>Address: 3 Cala close, Guglethu, Cape Town, 7493</li>
+        <li>Nationality: South Africa</li>
+      </ul>
+      <h2>About Me</h2>
+      <p>I am a passionate IT professional with expertise in website design, backend development, and database
+        management. I have strong technical and interpersonal skills and am eager to take on challenges that enhance my
+        abilities. My primary goal is to use my technical knowledge to make a positive impact on people and
+        organizations.</p>
+    </div>
+
+    <div id="education" class="section">
+      <h2>Education</h2>
+      <h4>University of Fort Hare</h4>
+      <h5>Bachelor of Commerce (Information Systems)</h5>
+      <p class="date"><i class="fa fa-calendar"></i>2017 - 2019</p>
+      <h4>Vulingcobo Senior Secondary School</h4>
+      <h5>Matric</h5>
+      <p class="date"><i class="fa fa-calendar"></i>2014 - 2016</p>
+    </div>
+
+    <div id="skills" class="section">
+      <h2>Skills</h2>
+      <p>I excel in problem-solving and time management, consistently demonstrating a strong work ethic and flexibility
+        in dynamic environments. My ability to collaborate effectively in teams and communicate clearly enhances my
+        productivity and project outcomes. I am skilled in a range of programming languages, including MySQL, C#, HTML,
+        and Python, and have a thorough command of the Microsoft Office Suite, which supports my technical and
+        administrative tasks efficiently.</p>
+    </div>
+
+    <div id="interests" class="section">
+      <h2>Interests & Hobbies</h2>
+      <p>I am deeply passionate about gaming, with a particular enthusiasm for EA FC, where I dive into new strategies
+        and skill enhancement. My curiosity also extends to technology, especially in exploring and mastering the latest
+        iPhone features and emerging gadgets. I have a keen interest in fun facts and captivating trivia, which fuels my
+        ongoing pursuit of knowledge. As someone who thrives in indoor settings, I find immense satisfaction in
+        immersing myself in these interests within a comfortable and focused environment.</p>
+    </div>
+
+    <div id="work" class="section">
+      <h2>Work Experience</h2>
+      <h4>IDM/DebtBusters</h4>
+      <h5>Financial Consultant</h5>
+      <p class="date"><i class="fa fa-calendar"></i>13/02/2023 - Present</p>
+      <p>In my role as a Financial Counselor, I assist individuals in managing and resolving their debt issues. I
+        provide
+        personalized guidance to help clients understand their financial situations, develop effective debt management
+        plans, and implement strategies to achieve financial stability. My work involves evaluating clients' financial
+        conditions, negotiating with creditors, and offering support throughout the debt counselling process.</p>
+      <h4>University of Cape Town</h4>
+      <h5>IT Support/Web developer</h5>
+      <p class="date"><i class="fa fa-calendar"></i>01/10/2021 - 30/09/2023</p>
+      <p>In my role as a Web Developer and IT Support, I developed a website for the EPIC research group at UCT,
+        enhancing their online presence and functionality. Additionally, I managed the Microsoft Teams channel for the
+        Decolonising Speech, Language & Hearing (SLH) Professions initiative, overseeing communication and coordination
+        efforts.</p>
+      <h4>WebAfrica</h4>
+      <h5>Customer Support</h5>
+      <p class="date"><i class="fa fa-calendar"></i>01/06/2022 - 10/02/2023</p>
+      <p>As an Order Fulfillment Contacts Agent, I assisted clients with their orders, ensuring both accuracy and timely
+        processing. I provided exceptional customer service by addressing inquiries and resolving issues effectively.
+        Additionally, I coordinated with various departments to streamline the order fulfillment process, which
+        contributed to enhanced client satisfaction and operational efficiency.</p>
+      <h4>Capaciti</h4>
+      <h5>Junior IT associate Learnership</h5>
+      <p class="date"><i class="fa fa-calendar"></i>18/05/2021 - 30/09/2021</p>
+      <p>During my learnership, I honed my frontend skills with a focus on HTML, CSS, and JavaScript. I also delved into
+        backend development, where my primary concentration was on Python, enhancing my proficiency in building and
+        managing web applications..</p>
+      <h4>Zwelihle Primary School</h4>
+      <h5>IT Support</h5>
+      <p class="date"><i class="fa fa-calendar"></i>01/12/2020 - 31/03/2021</p>
+      <p>Assisted teachers and students with technical issues, including troubleshooting school computers and tablets,
+        and connecting devices to the internet.</p>
+      <h4>University of Fort Hare</h4>
+      <h5>Tutoring Computer Literacy</h5>
+      <p class="date"><i class="fa fa-calendar"></i>01/02/2019 - 30/06/2019</p>
+      <p>As a Computer Literacy Tutor, I provided personalized instruction to students, helping them develop essential
+        computer skills and understand basic and advanced concepts in technology. I designed and delivered engaging
+        lessons tailored to individual learning needs, fostering a supportive learning environment. My role involved
+        assessing progress, addressing challenges, and ensuring that students gained confidence and proficiency in using
+        various software and tools.</p>
+    </div>
+
+    <div id="reference" class="section">
+      <h2>References</h2>
+      <h4>DebtBusters - </h4>
+      <h4>Prof. K Harsha - University of Cape Town, no: 021 406 6041 </h4>
+      <h4>Cindy-Lee Hercules - WebAfrica, no: 081 560 7334</h4>
+      <h4>Siyanda Mfazwe - Capaciti, no: 081 024 7974</h4>
+      <h4>Mr. Budu - Zwelihle Primary School, no: 068 587 1238</h4>
+      <h4>Mr. Mamba - University of Fort Hare, no: 073 288 4808 </h4>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('.sidebar a');
+      const sections = document.querySelectorAll('.main .section');
+      const sidebar = document.querySelector('.sidebar');
+      let activeSection = null;
+
+      function hideAllSections() {
+        sections.forEach(section => {
+          section.style.display = 'none';
+        });
+      }
+
+      function showAllSections() {
+        sections.forEach(section => {
+          section.style.display = 'block';
+        });
+      }
+
+      function showSection(id) {
+        const targetSection = document.getElementById(id);
+        if (targetSection) {
+          targetSection.style.display = 'block';
+          activeSection = targetSection; // Track the currently active section
+        }
+      }
+
+      function setActiveLink(link) {
+        links.forEach(l => l.classList.remove('active'));
+        if (link) {
+          link.classList.add('active');
+        }
+      }
+
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+
+          if (activeSection && activeSection.id === targetId) {
+            // If the clicked section is already active, show all sections
+            showAllSections();
+            setActiveLink(null); // Remove active class if no section is active
+            activeSection = null; // Reset the active section
+          } else {
+            hideAllSections();
+            showSection(targetId);
+            setActiveLink(this); // Highlight the clicked link
+          }
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.sidebar')) {
+          if (activeSection) {
+            showAllSections(); // Show all sections if any are active
+            setActiveLink(null); // Remove active class when clicking outside
+            activeSection = null; // Reset the active section
+          } else {
+            showAllSections(); // Show all sections if no section is active
+          }
+        }
+      });
+
+      // Initial setup to show all sections by default
+      showAllSections();
+    });
+  </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
